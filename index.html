@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>THREEJS - GEOMETRIE</title>
+    <meta charset="UTF-8" />
+
+    <script src="library/Stats.js"></script>
+    <script src="library/three.js"></script>
+    <script src="scripts/LoadData.js"></script>
+    <script src="scripts/Level.js"></script>
+    <script src="scripts/Player.js"></script>
+    <script src="scripts/cameraMovements.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/laser.js"></script>
+    <script src="scripts/update_lasera.js"></script>
+    <link href="style/normalise.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        FOV kamery:
+        <input type="range" id="cameraFOV" min="25" max="150" step="1" value="45" />
+        Y kamery(PLAYER):
+        <input type="range" id="cameraY" min="-200" max="200" step="1" value="40" />
+        Z kamery(PLAYER):
+        <input type="range" id="cameraZ" min="-300" max="300" step="1" value="0" />
+        <div id="scene"></div>
+    </div>
+</body>
+</html>
